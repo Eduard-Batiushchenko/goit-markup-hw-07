@@ -1,11 +1,282 @@
-/* primary-bg-white: #ffffff; */
-/* secondary-bg-grey: #F5F4FA; */
-/* third-bg-color: #2196F3; */
-/* heroic-bg: #2F303A; */
-/* primary-text-color: #212121; */
-/* secondary-text-color: #757575; */
-/* third-text-color: #2196F3; */
-/* heroic-text-color: #FFFFFF; */
+/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+:root {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+Sections
+========
+*/
+/**
+Remove the margin in all browsers.
+*/
+body {
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+.visual-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 .nav .link,
 .contacts .link,
 svg,
@@ -26,50 +297,85 @@ img {
   display: block;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+.list {
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0;
 }
 
-/* Navigation */
+.title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.photo {
+  margin-bottom: 30px;
+}
+
+.link {
+  text-decoration: none;
+  color: #757575;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.link:hover, .link:focus {
+  color: #2196f3;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section .title {
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.section .subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #212121;
+}
+
+.section .text {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #757575;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.section .name {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.section .prof {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #757575;
+  line-height: 1.19;
+}
+
 .header {
   border-bottom: 1px solid #eeeeee;
-}
-
-.nav {
-  display: flex;
-}
-
-.nav-header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav .list {
-  display: flex;
-  align-items: center;
-  margin-left: 93px;
-}
-
-.contacts-icons {
-  margin-right: 10px;
-  display: inline-flex;
-  align-self: center;
-  width: 16px;
-  height: 12px;
-  fill: #757575;
-}
-
-.nav-item .link {
-  display: flex;
-  align-content: center;
-}
-
-.nav-item:not(:last-child) {
-  margin-right: 40px;
 }
 
 .header .container {
@@ -82,28 +388,28 @@ img {
   align-items: center;
 }
 
-.nav .logo {
-  text-decoration: none;
-  color: #2196f3;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.17;
+.nav {
+  display: flex;
 }
 
-.nav .logo-part {
-  color: #212121;
-  font-weight: 400;
-  line-height: 1.38;
+.nav .list {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav .link {
   text-decoration: none;
-  color: #212121;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: #212121;
 }
 
 .nav .link:hover,
@@ -127,38 +433,35 @@ img {
   border-radius: 2px;
 }
 
-/* Contacts */
-.list {
-  list-style-type: none;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 0;
+.nav-item:not(:last-child) {
+  margin-right: 40px;
 }
 
-.contacts .link {
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logo {
   text-decoration: none;
-  color: #757575;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-.contacts .link:hover,
-.contacts .link:focus {
   color: #2196f3;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
 }
 
-.contacts .link:hover .contacts-icons,
-.contacts .link:focus .contacts-icons {
-  fill: #2196f3;
+.logo-part {
+  color: #212121;
+  font-weight: 400;
+  line-height: 1.38;
 }
 
-/* Heroic */
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
+.footer .logo-part {
+  color: #ffffff;
 }
 
 .backdrop {
@@ -171,6 +474,11 @@ img {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal {
@@ -208,10 +516,6 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-label:focus-within .modal-label-icon {
-  fill: #2196f3;
-}
-
 .modal-label:focus-within .label-input {
   border-color: #2196f3;
   outline: none;
@@ -221,24 +525,11 @@ img {
   padding: 12px 16px;
 }
 
-.visual-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-
-.label-text {
-  display: flex;
-  margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.16;
+.label-input.comment::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-label {
@@ -248,15 +539,17 @@ img {
   margin-bottom: 10px;
 }
 
-.modal-label.textarea {
-  margin-bottom: 20px;
+.modal-label .label-text {
+  display: flex;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
 }
 
-.label-input.comment::placeholder {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+.modal-label.textarea {
+  margin-bottom: 20px;
 }
 
 .modal-label.confirm {
@@ -270,7 +563,7 @@ img {
   margin-bottom: 30px;
 }
 
-.modal-link {
+.modal-label .modal-link {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #2196f3;
@@ -309,6 +602,10 @@ img {
   cursor: pointer;
 }
 
+.button-modal-icon:hover .modal-icon {
+  fill: #2196f3;
+}
+
 .modal-label-icon {
   position: absolute;
   top: 50%;
@@ -317,37 +614,83 @@ img {
   height: 18px;
 }
 
-.button-modal-icon:hover .modal-icon {
+.modal-label:focus-within .modal-label-icon {
   fill: #2196f3;
 }
 
-.heroic {
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: radial-gradient(circle at center, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
+.contacts-icons {
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+  width: 16px;
+  height: 12px;
+  fill: #757575;
 }
 
-.title {
-  margin-top: 0px;
-  margin-bottom: 50px;
+.contacts .link:hover .contacts-icons,
+.contacts .link:focus .contacts-icons {
+  fill: #2196f3;
 }
 
-.heroic .title {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  max-width: 696px;
-  color: #ffffff;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+.social-icons-item {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.footer-section .social-icons-item {
+  fill: #ffffff;
+}
+
+.social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.footer-section .social-icons-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.social-icons-link:hover, .social-icons-link:focus {
+  background-color: #2196f3;
+}
+
+.social-icons-link:hover .social-icons-item,
+.social-icons-link:focus .social-icons-item {
+  fill: #ffffff;
+}
+
+.telegram-icon {
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+}
+
+.social-icons-menu {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.social-icons-menu .social-icons-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icons-menu.footer-icons {
+  justify-content: flex-start;
 }
 
 .button {
@@ -364,13 +707,61 @@ img {
   letter-spacing: 0.06em;
 }
 
-/* About us, Our team */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.button.portfolio {
+  padding: 6px 22px;
+  border: transparent;
+  border-radius: 4px;
+  min-width: auto;
+  background-color: #f5f4fa;
+  color: #212121;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.62;
 }
 
-.section.benefits {
+.button.portfolio:hover, .button.portfolio:active, .button.portfolio:focus {
+  padding: 6px 22px;
+  border: transparent;
+  border-radius: 4px;
+  min-width: auto;
+  background-color: #2196f3;
+  color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.button.footer-button {
+  padding-right: 62px;
+}
+
+.button-container {
+  position: relative;
+}
+
+.heroic {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: radial-gradient(circle at center, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.heroic .title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  max-width: 696px;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.benefits {
   padding-bottom: 0;
 }
 
@@ -386,6 +777,10 @@ img {
 
 .benefits-item {
   width: 270px;
+}
+
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .benefits-item.one::before {
@@ -424,37 +819,17 @@ img {
   height: 120px;
 }
 
-.benefits-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.section .title {
-  color: #212121;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-
-.section .subtitle {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 1.14;
-  color: #212121;
-}
-
-.section.about-us .list {
+.about-us .list {
   display: flex;
   justify-content: space-between;
 }
 
-.section.about-us .item {
+.about-us .item {
   position: relative;
   width: 370px;
 }
 
-.modal-block {
+.about-us .description {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -462,7 +837,7 @@ img {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.modal-text {
+.about-us .description-text {
   display: flex;
   justify-content: center;
   margin-top: 0;
@@ -478,7 +853,7 @@ img {
   color: #ffffff;
 }
 
-.section.our-team {
+.our-team {
   background-color: #f5f4fa;
 }
 
@@ -493,111 +868,6 @@ img {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.social-icons-menu {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-.social-icons-menu.footer-icons {
-  justify-content: flex-start;
-}
-
-.social-icons-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: #ffffff;
-}
-
-.social-icons-list:not(:last-child) {
-  margin-right: 10px;
-}
-
-.footer-section .social-icons-link {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-}
-
-.social-icons-item {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
-}
-
-.footer-section .social-icons-item {
-  fill: #ffffff;
-}
-
-.social-icons-link:hover,
-.social-icons-link:focus {
-  background-color: #2196f3;
-}
-
-.social-icons-link:hover .social-icons-item,
-.social-icons-link:focus .social-icons-item {
-  fill: #ffffff;
-}
-
-.section .text {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #757575;
-  font-size: 14px;
-  line-height: 1.71;
-}
-
-.section .name {
-  margin-top: 0px;
-  margin-bottom: 10px;
-  text-align: center;
-  color: #212121;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-}
-
-.photo {
-  margin-bottom: 30px;
-}
-
-.section .prof {
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 16px;
-  color: #757575;
-  line-height: 1.19;
-}
-
-/* Footer*/
-.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #2f303a;
-}
-
-.footer .logo {
-  text-decoration: none;
-  color: #2196f3;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.17;
-}
-
-.footer .logo-part {
-  color: #ffffff;
-  font-weight: 400;
-  line-height: 1.38;
 }
 
 .main-clients {
@@ -631,8 +901,13 @@ img {
   border-color: #2196f3;
 }
 
-/* Footer address */
-.footer-section .section-title {
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+
+.footer .title {
   margin-top: 0;
   margin-bottom: 20px;
   color: #ffffff;
@@ -656,7 +931,7 @@ img {
   margin-bottom: 20px;
 }
 
-.address .text {
+.footer .text {
   margin-top: 0px;
   margin-bottom: 9px;
   color: #ffffff;
@@ -664,10 +939,6 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-}
-
-.address .text {
-  margin-bottom: 9px;
 }
 
 .footer-from-container {
@@ -703,53 +974,6 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.sign-in {
-  width: 570px;
-}
-
-.button.footer-button {
-  padding-right: 62px;
-}
-
-.button-container {
-  position: relative;
-}
-
-.telegram-icon {
-  position: absolute;
-  top: 50%;
-  right: 28px;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-}
-
-/* Portfolio buttons */
-.button.portfolio {
-  padding: 6px 22px;
-  border: transparent;
-  border-radius: 4px;
-  min-width: auto;
-  background-color: #f5f4fa;
-  color: #212121;
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.62;
-}
-
-.button.portfolio:hover,
-.button.portfolio:active,
-.button.portfolio:focus {
-  padding: 6px 22px;
-  border: transparent;
-  border-radius: 4px;
-  min-width: auto;
-  background-color: #2196f3;
-  color: #ffffff;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-/* Portfolio projects */
 .title.portfolio {
   margin-bottom: 0px;
   font-size: 18px;
@@ -768,18 +992,19 @@ img {
 
 .list.projects .item {
   width: 370px;
+  border: 1px solid #eeeeee;
 }
 
-.list.projects .item:hover,
-.list.projects .item:focus {
+.list.projects .item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.list.projects .item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.list.projects .item:hover, .list.projects .item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio .list.menu {
-  padding-bottom: 50px;
-  display: flex;
-  justify-content: center;
-  background-color: #ffffff;
 }
 
 .list.menu .item:not(:last-child) {
@@ -791,16 +1016,11 @@ img {
   flex-wrap: wrap;
 }
 
-.list.projects .item {
-  border: 1px solid #eeeeee;
-}
-
-.list.projects .item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
-}
-
-.list.projects .item:not(:nth-child(3n)) {
-  margin-right: 30px;
+.portfolio .list.menu {
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
 }
 
 .thumb {
@@ -815,6 +1035,12 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.thumb .text {
+  font-size: 18px;
+  line-height: 1.56;
+  color: #ffffff;
+}
+
 .thumb-photo {
   position: relative;
   overflow: hidden;
@@ -824,11 +1050,5 @@ img {
 .projects-links:focus .thumb {
   transform: translateY(0%);
   opacity: 1;
-}
-
-.thumb .text {
-  font-size: 18px;
-  line-height: 1.56;
-  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
